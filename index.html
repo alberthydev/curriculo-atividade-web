@@ -24,9 +24,9 @@
       --bg: #f6f8fb;
       --card: #ffffff;
       --muted: #6b7280;
-      --accent: #0ea5a4;
-      --accent-2: #0b7285;
-      --text: #0f172a;
+      --accent: #c77dff;
+      --accent-2: #9d4edd;
+      --text: #3c096c;
       --gap: 1rem;
     }
 
@@ -99,6 +99,14 @@
       margin-top: 0.5rem;
       font-size: 1.25rem;
       justify-content: center;
+    }
+
+    .social i {
+      transition: color 0.3s ease;
+    }
+
+    .social i:hover {
+      color: var(--text);
     }
 
     .skills {
@@ -186,8 +194,12 @@
 
       .sidebar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: initial;
         padding: 1.5rem;
+      }
+
+      .skill {
+        width: 100%;
       }
 
       main {
@@ -202,6 +214,11 @@
 
       .sidebar {
         padding: 1rem;
+        align-items: initial;
+      }
+
+      .skills {
+        width: 100%;
       }
 
       main {
@@ -226,7 +243,7 @@
         <div class="photo">
           <img
             src="https://avatars.githubusercontent.com/u/68515062?s=400&u=1e4cfa3c9f5cecdefddede63ab6a66c762612569&v=4"
-            alt="Foto do candidato">
+            alt="Foto do usuário">
         </div>
         <div>
           <div class="title">Albert Marques</div>
@@ -258,6 +275,9 @@
           <div class="skill">JavaScript
             <div class="progress"><span style="width:75%"></span></div>
           </div>
+          <div class="skill">TypeScript
+            <div class="progress"><span style="width: 30%;"></span></div>
+          </div>
         </div>
     </aside>
 
@@ -285,7 +305,6 @@
             <strong>App de Tarefas (React)</strong>
             <div class="muted">Lista de tarefas com filtro, persistência local e testes unitários.</div>
           </div>
-          <!-- Mais projetos -->
         </div>
       </section>
 
@@ -293,7 +312,28 @@
         <h2 id="education-title">Formação</h2>
         <div>
           <strong>Técnico em Informática — Instituto Federal Catarinense</strong>
-          <div class="muted">2019 — 2021</div>
+          <div class="muted">2017 — 2019</div>
+        </div>
+        <div>
+          <strong>Ciência da Computação — Instituto Federal Catarinense</strong>
+          <div class="muted">2020 — Presente</div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 id="hobbies-title">Hobbies</h2>
+        <div class="hobbies">
+          <div class="hobbie">
+            <strong><i class="fa-solid fa-book"></i> - Leitura</strong>
+            <div class="muted"></div>
+          </div>
+          <div class="hobbie">
+            <strong><i class="fa-solid fa-gamepad"></i> - Jogos</strong>
+            <div class="muted"></div>
+          </div>
+          <div class="hobbie">
+            <strong><i class="fa-solid fa-film"></i> - Filmes</strong>
+            <div class="muted"></div>
+          </div>
         </div>
       </section>
 
